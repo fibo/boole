@@ -1,0 +1,34 @@
+{
+  "name": "boole",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "chained logical conditions",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fibo/boole.git"
+  },
+  "keywords": [
+    "helper",
+    "bool",
+    "boolean",
+    "logic",
+    "logical",
+    "condition",
+    "if",
+    "and",
+    "or"
+  ],
+  "author": {
+    "name": "Gianluca Casati",
+    "url": "http://g14n.info"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fibo/boole/issues"
+  },
+  "homepage": "http://g14n.info/boole"
+}
