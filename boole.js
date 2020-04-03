@@ -4,8 +4,6 @@ export default function boole (a) {
   if (typeof a === 'undefined') {
     return {
       not: (b) => boole(!Boolean(b)),
-      isFalse: (b = true) => boole(b).isFalse(),
-      isTrue: (b = false) => boole(b).isTrue(),
     }
   } else {
     return {

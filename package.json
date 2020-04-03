@@ -2,8 +2,8 @@
   "name": "boole",
   "version": "0.1.0",
   "type": "module",
-  "description": "chained logical conditions",
-  "main": "index.js",
+  "description": "chained logical conditions: and, or, not, xor",
+  "main": "boole.js",
   "scripts": {
     "test": "node test"
   },
@@ -20,7 +20,14 @@
     "condition",
     "if",
     "and",
-    "or"
+    "or",
+    "not",
+    "xor",
+    "true",
+    "false",
+    "chain",
+    "chained",
+    "chaining"
   ],
   "author": {
     "name": "Gianluca Casati",
