@@ -4,6 +4,7 @@
   "type": "module",
   "description": "chained logical conditions: and, or, not, xor",
   "main": "boole.js",
+  "module": "boole.js",
   "scripts": {
     "test": "node test"
   },
