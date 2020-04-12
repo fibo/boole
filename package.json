@@ -3,6 +3,7 @@
   "version": "0.2.0",
   "type": "module",
   "description": "chained logical conditions: and, or, not, xor",
+  "browser": "boole.cjs.js",
   "main": "boole.js",
   "module": "boole.js",
   "scripts": {
