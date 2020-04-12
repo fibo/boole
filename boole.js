@@ -10,20 +10,20 @@ export default function boole (a) {
     return {
       not: (b) => {
         if (typeof b === 'function') {
-          return (...args) => boole(b(...args))
+          return (...args) => boole().not(b(...args))
         } else {
-          return boole(!Boolean(b))
+          return boole(!b)
         }
       }
     }
   }
 
   return {
-    isFalse: () => !Boolean(a),
-    isTrue: () => Boolean(a),
-    and: (b) => boole(Boolean(a) && Boolean(b)),
-    or: (b) => boole(Boolean(a) || Boolean(b)),
-    xor: (b) => boole((Boolean(a) && !Boolean(b)) || (!Boolean(a) && Boolean(b))),
-    not: () => boole(!Boolean(a)),
+    isFalse: () => !a,
+    isTrue: () => !!a,
+    and: (b) => boole(!!a && !!b),
+    or: (b) => boole(!!a || !!b),
+    xor: (b) => boole((!!a && !b) || (!a && !!b)),
+    not: () => boole(!a),
   }
 }
